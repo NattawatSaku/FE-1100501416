@@ -1,0 +1,31 @@
+ul{
+    background-color: #987070;
+    list-style-type:none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+li a{
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    color: #987070;
+    background-color: #F1E5D1;
+    border-radius: 15px;
+}
+.nav-end{
+    float: right;
+}
+.active-link{
+    color: #987070;
+    background-color: #F1E5D1;
+    border-radius: 15px;
+}

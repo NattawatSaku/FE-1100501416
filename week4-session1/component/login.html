@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showAdmin(){
+        document.getElementById("admin").innerHTML 
+        = "<input type='button' value='sss'><input type='text' value='sss'>";
+        }
+        function adddata(){
+            const pa = document.getElementById("item").value;
+            console.log(pa);
+            document.getElementById("result").innerHTML = pa;
+        }
+        function add(){
+            const d1 = document.getElementById("data1").value;
+            const d2 = document.getElementById("data2").value;
+            let res = d1+d2;
+            console.log(res);
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showAdmin()">
+        sd
+    </button>
+    <button onclick="adddata()">
+        adddata
+    </button>
+    <button onclick="add()">
+        add
+    </button>
+    <div id="admin">
+        Click.
+    </div>
+    <input type="text" id="item" value="">
+    <br>
+    <input type="number" id="data1" value="">
+    <input type="number" id="data2" value="">
+    <div id="data">
+        <p id="result">
+
+        </p>
+    </div>
+</body>
+</html>
