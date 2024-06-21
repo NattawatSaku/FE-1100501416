@@ -15,9 +15,9 @@
             document.getElementById("result").innerHTML = pa;
         }
         function add(){
-            const d1 = document.getElementById("data1").value;
-            const d2 = document.getElementById("data2").value;
-            let res = d1+d2;
+            const d1 = parseFloat(document.getElementById("data1").value);
+            const d2 = parseFloat(document.getElementById("data2").value);
+            const res = d1+d2;
             console.log(res);
             document.getElementById("result").innerHTML = res;
         }

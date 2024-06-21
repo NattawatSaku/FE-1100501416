@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imageslide</title>
+    <style>
+        .bar-arrow{
+            display: inline-block;
+            background-color: aquamarine;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        let num1 = 0;
+        const img_name = ["1.jpg","2.gif","3.jpg"]
+        function image_next(){
+            if(num1 >= 0 && num1 < img_name.length-1){
+                num1 = num1 + 1;
+            }else{
+                num1 = 0;
+            }
+            
+            console.log(img_name[num1]);
+            document.getElementById("image_nx").src = img_name[num1];
+
+        }
+        function image_previus(){
+            if(num1 >= 0 && num1 < img_name.length){
+                num1 = num1 - 1;
+            }else{
+                num1 = img_name.length;
+            }
+            //num1 = num1 - 1;
+            console.log(img_name[num1]);
+            document.getElementById("image_nx").src = img_name[num1];
+
+        }
+        setInterval(image_next , 1000);
+    </script>
+</head>
+<body>
+    <div class="bar-arrow ">
+        <button onclick="image_previus()">Previus</button>
+        <button onclick="image_next()">Next</button>
+    </div>
+    <div>
+        <img id="image_nx" src="1.jpg" alt="">
+    </div>
+</body>
+</html>
